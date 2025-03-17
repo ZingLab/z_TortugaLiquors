@@ -11,8 +11,30 @@
 <body>
     <!-- Header Section -->
     <header id="header">
-        <div class="container" data-include="components/navbar.html">
-            <!-- Navbar will be loaded here -->
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Tortuga Liquors</div>
+                <button class="mobile-menu-btn">☰</button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!--<li><a href="punta-santos.html">Tequila</a></li>-->
+                        <li><a href="sentia.html">Alcohol-free</a></li>
+                        <li><a href="cruises.html">Liquor Cruises</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <script>
+                // Mobile menu toggle
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                const navMenu = document.querySelector('.nav-menu');
+                
+                menuBtn.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            </script>
+            
         </div>
     </header>
 
@@ -83,8 +105,11 @@
 
     <!-- Footer Section -->
     <footer id="footer">
-        <div class="container" data-include="components/footer.html">
-            <!-- Footer will be loaded here -->
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> ZingLab. All rights reserved.</p>
+                <p>This site contains affiliate links. We may earn a commission on qualifying purchases.</p>
+            </div>
         </div>
     </footer>
 </body>
