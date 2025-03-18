@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Hero section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/800/400');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('index.png');
     background-size: cover;
     background-position: center;
     color: white;
