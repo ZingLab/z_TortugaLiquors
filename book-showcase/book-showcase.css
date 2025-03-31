@@ -1,0 +1,116 @@
+ /* Base styles */
+ .book-showcase {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Book showcase container */
+.book-showcase {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-showcase h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+/* Book grid using flexbox */
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 8px;
+}
+
+/* Individual book card */
+.book-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    text-shadow: 1px 1px 3px lightgray;
+    font-weight: 700;
+    background-blend-mode: screen;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1d2935;
+}
+
+.book-description {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #222;
+}
+
+/* Book links */
+.book-links {
+    display: flex;
+    gap: 10px;
+}
+
+.book-link {
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.paperback-link {
+    background-color: #e67e22;
+    color: white;
+}
+
+.paperback-link:hover {
+    background-color: #d35400;
+}
+
+.kindle-link {
+    background-color: #3498db;
+    color: white;
+}
+
+.kindle-link:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .book-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
