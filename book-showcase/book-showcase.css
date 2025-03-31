@@ -37,19 +37,17 @@
 
 /* Individual book card */
 .book-card {
+    color:#f8f9fa;
     flex: 1 1 250px;
     max-width: 300px;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-size: cover;
-    text-shadow: 1px 1px 3px lightgray;
-    font-weight: 700;
-    background-blend-mode: screen;
 }
 
 .book-card:hover {
@@ -61,14 +59,13 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #1d2935;
 }
 
 .book-description {
     flex-grow: 1;
     margin-bottom: 15px;
     font-size: 14px;
-    color: #222;
+    text-shadow: 1px 1px 2px darkslategray;
 }
 
 /* Book links */
@@ -87,24 +84,25 @@
     font-size: 14px;
     border-radius: 4px;
     transition: background-color 0.2s ease;
+    text-shadow: none;
 }
 
 .paperback-link {
-    background-color: #e67e22;
+    background-color: #146eb4;
     color: white;
 }
 
 .paperback-link:hover {
-    background-color: #d35400;
+    background-color: #115991;
 }
 
 .kindle-link {
-    background-color: #3498db;
+    background-color: #ff9900;
     color: white;
 }
 
 .kindle-link:hover {
-    background-color: #2980b9;
+    background-color: rgb(218, 131, 0);
 }
 
 /* Responsive adjustments */
