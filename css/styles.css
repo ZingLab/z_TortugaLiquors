@@ -107,13 +107,13 @@ h1, h2, h3, h4, h5, h6 {
 .hero h1 {
     font-size: 2rem;
     margin-bottom: 15px;
-    text-shadow: 2px 2px slategray;
+    text-shadow: 2px 2px 2px slategray;
 }
 
 .hero p {
     font-size: 1.1rem;
     margin-bottom: 25px;
-    text-shadow: 1px 1px slategray;
+    text-shadow: 1px 1px 2px slategray;
 }
 
 /* Homepage-specific hero styles */
@@ -535,3 +535,221 @@ section {
         width: 1170px;
     }
 }
+
+/* Story Section Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+    
+    .tortuga-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        line-height: 1.6;
+        background-color: #fff;
+        padding-top: 30px;
+    }
+    
+    .tortuga-header {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #0a3542;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    
+    .tortuga-header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: linear-gradient(90deg, #e6b325, #c97d10, #a64006);
+    }
+    
+    .header-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5rem;
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    
+    .tagline {
+        font-size: 1.3rem;
+        color: #e6b325;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    
+    .intro-section {
+        text-align: center;
+        padding: 0 20px 40px 20px;
+        max-width: 900px;
+        margin: 0 auto 50px auto;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        color: #0a3542;
+        margin-bottom: 25px;
+        font-weight: 600;
+        text-align: center;;
+    }
+    
+    .intro-section p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+    
+    .collection-section {
+        padding: 0 20px 60px 20px;
+    }
+    
+    .collection-intro {
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 50px auto;
+        font-size: 1.1rem;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .product-card {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .product-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    
+    .product-image-container {
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .product-card:hover .product-image {
+        transform: scale(1.05);
+    }
+    
+    .product-details {
+        padding: 25px;
+    }
+    
+    h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.6rem;
+        color: #0a3542;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    
+    h4 {
+        font-size: 1.1rem;
+        color: #a64006;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    
+    .product-description {
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .expert-note {
+        font-style: italic;
+        padding: 15px;
+        background-color: #f8f5f0;
+        border-left: 3px solid #e6b325;
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+    }
+    
+    .perfect-for {
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: #555;
+    }
+    
+    .mixologist-section {
+        background-color: #0a3542;
+        padding: 60px 20px;
+        color: #fff;
+    }
+    
+    .mixologist-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .mixologist-section h2 {
+        color: #e6b325;
+    }
+    
+    .mixologist-section p {
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+    
+    .signature {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-top: 30px;
+        color: #e6b325;
+    }
+    
+    @media (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+        }
+        
+        .tortuga-header {
+            padding: 40px 20px;
+        }
+    }
+    
